@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f472b6',  // Pink-400
+                        secondary: '#db2777', // Pink-600
+                        accent: '#be185d',    // Pink-700
+                        dark: '#831843',      // Pink-900
+                        light: '#fce7f3'      // Pink-50
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                              url('/Users/ananyasripuram/Downloads/Programs/Portfolio/bg2.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-lg">My Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a>
+                    <a href="projects.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Projects</a>
+                    <a href="skills.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Skills</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-image h-screen flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h1 class="text-5xl font-bold mb-4"> Data Science Enthusiast |Passionate about Data-Driven Innovations </h1>
+            <p class="text-xl mb-8">3rd-year BTech student at PES University | Technical & Projects Member @ Equinox ECC</p>
+            <a href="#projects" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="/Users/ananyasripuram/Downloads/Programs/Portfolio/bg2.png" alt="Profile" class="rounded-lg shadow-xl w-full max-w-md">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <p class="text-lg mb-4">
+                        I'm a highly driven data science and astrophysics enthusiast with strong skills in Python, SQL, Power BI, and statistical modeling.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Currently working on an AI-powered data analytics SaaS and exploring how blockchain can validate ML predictions.
+                    </p>
+                    <p class="text-lg mb-6">
+                        My goal is to secure a high-paying data scientist role while building wealth through investing and business ventures.
+                    </p>
+                    <a href="about.html" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                        Read more about my journey →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Katha Yatra" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Katha Yatra</h3>
+                        <p class="text-gray-600 mb-4">AI-powered travel itinerary planning system</p>
+                        <a href="projects.html#katha-yatra" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg" alt="Crop Forecasting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Crop Price Forecasting</h3>
+                        <p class="text-gray-600 mb-4">Statistical modeling for agricultural predictions</p>
+                        <a href="projects.html#crop-forecasting" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg" alt="Kafka Streaming" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Kafka Event Streaming</h3>
+                        <p class="text-gray-600 mb-4">Real-time data processing architecture</p>
+                        <a href="projects.html#kafka-streaming" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="projects.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Let's Connect</h3>
+                    <p class="mb-4">Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/ananya-sripuram-88316b2a8/" target="_blank" class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-linkedin-in text-2xl"></i>
+                        </a>
+                        <a href="https://github.com/Ans7347" target="_blank" class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="mailto:ansripuram@gmail.com" class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-300 transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-300 transition duration-300">About</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-300 transition duration-300">Projects</a></li>
+                        <li><a href="skills.html" class="hover:text-blue-300 transition duration-300">Skills</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-300 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; Ananya Sripuram. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

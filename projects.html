@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Data Science Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-lg">My Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a>
+                    <a href="projects.html" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Projects</a>
+                    <a href="skills.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Skills</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="pt-24 pb-12 px-6 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-16 text-center">My Projects</h1>
+        
+        <!-- Project 1: Katha Yatra -->
+        <section id="katha-yatra" class="mb-24">
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Katha Yatra" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <h2 class="text-3xl font-bold mb-4">Katha Yatra</h2>
+                    <p class="text-gray-600 text-lg mb-5">AI-powered travel itinerary planning system</p>
+                    <div class="mb-7">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Python</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Machine Learning</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">NLP</span>
+                    </div>
+                    <p class="text-gray-800 mb-5 text-lg leading-relaxed">
+                        Developed an AI system that generates personalized travel itineraries based on user preferences, budget constraints, and time availability. The system uses natural language processing to understand user requests and machine learning to optimize route planning.
+                    </p>
+                    <ul class="list-disc pl-5 mb-7 space-y-2 text-gray-800 text-lg">
+                        <li>Implemented sentiment analysis to understand user preferences</li>
+                        <li>Integrated with multiple travel APIs for real-time data</li>
+                        <li>Reduced planning time by 60% compared to manual methods</li>
+                    </ul>
+                    <a href="#" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 2: Crop Demand Forecasting -->
+        <section id="crop-forecasting" class="mb-20">
+            <div class="flex flex-col md:flex-row-reverse gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg" alt="Crop Forecasting" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Crop Price Forecasting</h2>
+                    <p class="text-gray-600 mb-4">Hybrid Model (LSTM + XGBoost + ARIMA) for agricultural predictions</p>
+                    <div class="mb-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Python</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">LSTM</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">XGBoost</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">ARIMA</span>
+                    </div>
+                    <p class="text-gray-800 mb-4">
+                        Developed a hybrid model combining the strengths of different algorithms for robust crop price forecasting:
+                    </p>
+                    <div class="space-y-4 mb-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">1. LSTM for Long-Term Trends</h3>
+                            <p class="text-gray-800">Captures seasonal patterns and multi-year price trends in agricultural commodities.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">2. XGBoost for Short-Term Factors</h3>
+                            <p class="text-gray-800">Handles sudden price fluctuations using external features like weather, demand data, and government policies.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">3. ARIMA for Statistical Baseline</h3>
+                            <p class="text-gray-800">Provides a stable forecasting foundation by capturing recent trends and smoothing fluctuations.</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mb-6 space-y-1 text-gray-800">
+                        <li>Analyzed 10+ years of agricultural data from government sources</li>
+                        <li>Implemented hybrid model combining LSTM, XGBoost and ARIMA</li>
+                        <li>Achieved 92% accuracy in price predictions (7% improvement over single models)</li>
+                        <li>Integrated external factors like weather patterns and market trends</li>
+                    </ul>
+                    <a href="https://github.com/Ans7347/Crop-Price-Forecast-Model" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 3: Kafka Event Streaming -->
+        <section id="kafka-streaming" class="mb-20">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg" alt="Kafka Streaming" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Kafka Event Streaming</h2>
+                    <p class="text-gray-600 mb-4">Emostream: Real-Time Emoji Broadcasting</p>
+                    <div class="mb-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Kafka</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Python</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Apache Spark</span>
+                    </div>
+                    <p class="text-gray-800 mb-4">
+                        Designed and implemented a real-time event streaming pipeline using Apache Kafka for processing high-volume data streams with low latency. The system handles up to 10,000 events per second with 99.9% reliability.
+                    </p>
+                    <ul class="list-disc pl-5 mb-6 space-y-1 text-gray-800">
+                        <li>Configured Kafka producers and consumers for optimal throughput</li>
+                        <li>Implemented fault tolerance with replication and partitioning</li>
+                        <li>Integrated with Python-based analytics services</li>
+                        <li>Low-latency concurrent broadcasting</li>
+                        <li>JavaScript-based interactive UI</li>
+                        <li>Improved user engagement metrics</li>
+                    </ul>
+                    <a href="#" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 9: Object Detection -->
+        <section id="object-detection" class="mb-20">
+            <div class="flex flex-col md:flex-row-reverse gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Object Detection" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Real-Time Object Detection</h2>
+                    <div class="mb-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Python</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">OpenCV</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">YOLOv8</span>
+                    </div>
+                    <ul class="list-disc pl-5 mb-6 space-y-1 text-gray-800">
+                        <li>95% accuracy in object detection</li>
+                        <li>15% reduction in processing latency</li>
+                        <li>Optimized for surveillance applications</li>
+                        <li>Robotics integration capabilities</li>
+                    </ul>
+                    <a href="https://github.com/Ans7347/Object-detection-model" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 5: Customer Churn Analysis -->
+        <section id="churn-analysis" class="mb-20">
+            <div class="flex flex-col md:flex-row-reverse gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg" alt="Customer Churn Analysis" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Customer Churn Analysis & Prediction</h2>
+                    <div class="mb-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Python</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Random Forest</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Power BI</span>
+                    </div>
+                    <ul class="list-disc pl-5 mb-6 space-y-1 text-gray-800">
+                        <li>Achieved 90% prediction accuracy using Random Forest Classifier</li>
+                        <li>Reduced churn rate by 15% through feature analysis</li>
+                        <li>Implemented data preprocessing pipelines with Python/Pandas</li>
+                        <li>Created Power BI dashboards for stakeholder monitoring</li>
+                        <li>Conducted statistical analysis and model fine-tuning</li>
+                    </ul>
+                    <a href="https://github.com/Ans7347/Customer-Churn-Analysis" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 6: TRUSTMED -->
+        <section id="trustmed" class="mb-20">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/159211/headache-pain-pills-medication-159211.jpeg" alt="TRUSTMED" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">TRUSTMED - Drug Database Management</h2>
+                    <div class="mb-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">ReactJS</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">ExpressJS</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">MySQL</span>
+                    </div>
+                    <ul class="list-disc pl-5 mb-6 space-y-1 text-gray-800">
+                        <li>Full-stack web application for pharmacy management</li>
+                        <li>Streamlined inventory management and drug tracking</li>
+                        <li>Implemented vendor coordination features</li>
+                    </ul>
+                    <a href="https://github.com/Ans7347/TRUSTMED--Drug-database-management-system/tree/main" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 8: Auxilium -->
+        <section id="auxilium" class="mb-20">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg" alt="Auxilium" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Auxilium - Personal Finance Management</h2>
+                    <div class="mb-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Python</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">MySQL</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-3 py-1 rounded-full">Matplotlib</span>
+                    </div>
+                    <ul class="list-disc pl-5 mb-6 space-y-1 text-gray-800">
+                        <li>Financial transaction tracking system</li>
+                        <li>Automated data import for bank statements</li>
+                        <li>Interactive visualizations for financial planning</li>
+                        <li>Custom reporting features</li>
+                    </ul>
+                    <a href="https://github.com/Ans7347/Auxilium-A_Personal_Finance_Management_System.git" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-300">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Let's Connect</h3>
+                    <p class="text-gray-300 mb-6 max-w-md">I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                    <div class="flex space-x-6">
+                        <a href="https://www.linkedin.com/in/ananya-sripuram-88316b2a8/" target="_blank" class="text-white hover:text-blue-400 transition duration-300 text-3xl">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Ans7347" target="_blank" class="text-white hover:text-blue-400 transition duration-300 text-3xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:ansripuram@gmail.com" class="text-white hover:text-blue-400 transition duration-300 text-3xl">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Navigation</h3>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-300 hover:text-blue-400 transition duration-300 text-lg">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-blue-400 transition duration-300 text-lg">About</a></li>
+                        <li><a href="projects.html" class="text-gray-300 hover:text-blue-400 transition duration-300 text-lg">Projects</a></li>
+                        <li><a href="skills.html" class="text-gray-300 hover:text-blue-400 transition duration-300 text-lg">Skills</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-blue-400 transition duration-300 text-lg">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2023 Ananya Sripuram. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
